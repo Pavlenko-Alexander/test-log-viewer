@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #01060e;
+  color: #f97316;
+  position: relative;
+
+  .logs {
+    position: relative;
+    min-width: 768px;
+    height: 100vh;
+    scrollbar-color: #7c7c7f #fff;
+    background-color: #040d19;
+
+    .auto-scroll-btn {
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      z-index: 1;
+      border-radius: 100%;
+      bottom: 30px;
+      right: 30px;
+      margin-left: -30px;
+      background-color: #b32b23;
+
+      &--active {
+        background-color: #188a42;
+      }
+    }
+
+    @media (max-width: 768px) {
+      min-width: 100vw;
+    }
+  }
+}
